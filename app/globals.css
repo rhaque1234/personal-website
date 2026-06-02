@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root,
+[data-theme="dark"] {
+  --bg: #0C100E;
+  --bg-top: #111714;
+  --display: #ECEFEA;
+  --tagline: #AEB7B0;
+  --body: #9AA39C;
+  --label: #6E7A73;
+  --hairline: #1E2723;
+  --accent: #5FBF92;
+}
+
+[data-theme="light"] {
+  --bg: #F7F7F2;
+  --bg-top: #FCFCF8;
+  --display: #1A211C;
+  --tagline: #5A6760;
+  --body: #5F6B64;
+  --label: #8A938C;
+  --hairline: #E3E5DF;
+  --accent: #1C5B40;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  background-color: var(--bg);
+}
+
+body {
+  background-color: var(--bg);
+  background-image: radial-gradient(
+    ellipse 90% 60% at 50% -10%,
+    var(--bg-top) 0%,
+    var(--bg) 65%
+  );
+  background-attachment: fixed;
+  color: var(--body);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background-color: var(--accent);
+  color: var(--bg);
+}
+
+[data-theme="dark"] .theme-icon-moon {
+  display: none;
+}
+
+[data-theme="light"] .theme-icon-sun {
+  display: none;
+}
+
+.nav-bg {
+  background-color: color-mix(in srgb, var(--bg) 76%, transparent);
+  backdrop-filter: saturate(160%) blur(10px);
+  -webkit-backdrop-filter: saturate(160%) blur(10px);
+}
+
+.font-display {
+  font-family: var(--font-display), ui-serif, Georgia, "Times New Roman", serif;
+}
+
+.hero-name {
+  font-family: var(--font-display), ui-serif, Georgia, serif;
+  font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 1;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.02;
+  color: var(--display);
+  font-size: clamp(2.75rem, 6vw + 1rem, 4.75rem);
+}
+
+.wordmark {
+  font-family: var(--font-display), ui-serif, Georgia, serif;
+  font-variation-settings: "opsz" 36, "SOFT" 100, "WONK" 0;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-size: 19px;
+}
