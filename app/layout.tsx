@@ -19,9 +19,6 @@ export const metadata: Metadata = {
   title: "Raiyan Haque",
   description:
     "I build technology that makes care more human. Working at the intersection of AI, healthcare, and trust & safety.",
-  icons: {
-    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
-  },
 };
 
 const themeInitScript = `(function(){try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();`;

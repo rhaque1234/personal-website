@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="RH icon">
+  <rect width="64" height="64" rx="12" fill="#0C100E"/>
+  <g fill="#ECEFEA">
+    <!-- R: left stem -->
+    <rect x="12" y="14" width="7" height="36" rx="3.5"/>
+    <!-- R: top bar -->
+    <rect x="12" y="14" width="17" height="7" rx="3.5"/>
+    <!-- R: bowl right vertical -->
+    <rect x="22" y="14" width="7" height="20" rx="3.5"/>
+    <!-- R: waist / middle bar -->
+    <rect x="12" y="27" width="17" height="7" rx="3.5"/>
+    <!-- R: diagonal leg -->
+    <path d="M18 34 L25 34 L30 50 L23 50 Z"/>
+    <!-- H: left stem -->
+    <rect x="35" y="14" width="7" height="36" rx="3.5"/>
+    <!-- H: right stem -->
+    <rect x="45" y="14" width="7" height="36" rx="3.5"/>
+    <!-- H: crossbar -->
+    <rect x="35" y="27" width="17" height="7" rx="3.5"/>
+  </g>
+</svg>
